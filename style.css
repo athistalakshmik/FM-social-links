@@ -1,0 +1,82 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color1: hsl(75, 94%, 57%);
+  --color2: hsl(0, 0%, 100%);
+  --color3: hsl(0, 0%, 20%);
+  --color4: hsl(0, 0%, 12%);
+  --color5: hsl(0, 0%, 8%);
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color5);
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  }
+.container {
+   /* display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column; */
+  background-color: var(--color4);
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+}
+header img {
+  height: 100%;
+  width: 7rem;
+  border-radius: 50%;
+}
+header h1 {
+  color: var(--color2);
+  padding-top: 10px;
+  font-weight: 700;
+}
+header h4 {
+  color: var(--color1);
+  padding: 5px;
+  font-weight: 600;
+}
+.mainclass p {
+  color: var(--color2);
+  padding: 1.5rem 0;
+  font-weight: 600;
+}
+.divclass {
+  background-color: var(--color3);
+  padding: 8px;
+  width: 75%;
+  margin: 15px auto;
+  color: var(--color2);
+  border-radius: 6px;
+  font-weight: 400;
+}
+.divclass:hover,
+.divclass:focus {
+  background-color: var(--color1);
+  color: var(--color5);
+  cursor: pointer;
+  font-weight: 400;
+}
+
+
+
+@media (min-width: 375px) {
+  .container {
+   width: 80%;
+  }
+ }
+ @media (min-width: 800px) {
+  .container {
+    width: 30%;
+  }
+}
